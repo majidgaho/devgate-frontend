@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .table-container {
+    display: inline-block;
+    min-width: 60%;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .centered-header, .centered-cell {
+    text-align: center;
+  }
+  
+  /* Optional: Ensure full width for cells to enhance the centering effect */
+  .mat-column-id {
+    flex: 1 1 100%;
+  }
+  
+  

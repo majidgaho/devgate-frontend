@@ -1,0 +1,19 @@
+<div class="task-form">
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Task Name</mat-label>
+        <input matInput  [(ngModel)]="name"  placeholder="Enter task name" [ngModelOptions]="{standalone: true}">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Status</mat-label>
+        <mat-select [(ngModel)]="status" name="status" [ngModelOptions]="{standalone: true}">
+          <mat-option value="Pending">Pending</mat-option>
+          <mat-option value="Completed">Completed</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary" *ngIf="!isUpdate" (click)="saveTask()">Save</button>
+      <button mat-raised-button color="primary" *ngIf="isUpdate" (click)="updateTask()">Update</button>
+    </form>
+  </div>
+  
